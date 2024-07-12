@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS lists</title>
+    <style>
+        
+        nav ul li{
+            /* display : flex ---krnege toh yeh block element ban jayega aur side side me aa jayega lekin hume list style position ko "inside" se outside krna padega */
+            list-style: devanagari;
+            list-style-type: "👦";
+            background-color: orange;
+            list-style-position: inside;/*is tag ki madad se numbers 1,2,3 ko list elements ke andar rakh dete hai ab isme jo bhi change honga vo puri list me hoga*/
+            border: 2px solid black;
+            list-style-image: url();
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>COntact</li>
+        </ul>
+    </nav>
+</body>
+</html>

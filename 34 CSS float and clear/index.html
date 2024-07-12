@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & card</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+
+        }
+        img{
+            float: right;
+        }
+       .card{
+        border: 2px solid red;
+       }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: right; /*yaha both bhi aa jata haoi jisse element left aur right dono me nhi float hoga*/
+        }
+    </style>
+</head>
+<body>
+   <div class="cards">
+    <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600" alt="" width="230px">
+    <div class="card">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde expedita suscipit assumenda error excepturi possimus nulla nesciunt labore, perspiciatis ratione? Corrupti, non quae consequuntur cumque ducimus sapiente aliquam iste vero voluptas nemo quo laudantium?</p>
+    </div>
+    <!-- yeh lorem lagane ke baad bhi text nhi katt raha hai;) kyuki flow root laga hai aur image float kregi isme -->
+    <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos corporis maiores, perspiciatis facilis esse temporibus minima qui culpa quidem voluptatem odio neque sapiente sit quasi, voluptatibus adipisci vel incidunt nisi beatae, voluptatum nulla fuga. Dolor explicabo hic laudantium debitis dolorum pariatur voluptatibus, nesciunt sint assumenda suscipit libero inventore facilis natus, consequuntur corrupti vel modi saepe beatae, officia reprehenderit tempore quae minus! Iste minus veniam sed architecto libero nihil animi placeat harum nostrum commodi, molestiae sunt, a, odio voluptate deleniti non obcaecati numquam distinctio? Eaque, perferendis fugiat. Id impedit cum totam unde. Harum repellendus sapiente ipsa ad. Iusto provident hic excepturi quisquam expedita at debitis recusandae eum dignissimos omnis deleniti, inventore earum commodi accusantium ipsam. Alias cupiditate, quasi maxime distinctio rem veniam corporis odit laborum quisquam, itaque magni consequatur aperiam dolor delectus nemo reiciendis deleniti repellendus quam eius numquam sed quo esse aliquam impedit. Excepturi soluta ipsum aut quisquam sunt! Qui recusandae enim vel? Quisquam accusamus error fugiat necessitatibus laboriosam maxime maiores facere corrupti voluptates? Doloribus, praesentium quasi atque nisi cupiditate laborum eius et necessitatibus sed consequatur odio voluptatem accusantium porro minima veritatis labore quidem. Ratione excepturi iure quo magni, quia tempore ab aliquam esse quas deserunt expedita voluptas hic consequuntur porro architecto labore dignissimos officiis fuga vel perspiciatis pariatur optio nam nemo at? Fuga porro dicta mollitia corporis a quo eum, distinctio aut dolorum corrupti aspernatur sed nobis eius incidunt consequuntur illum ut nostrum culpa sit natus, facere reiciendis, error molestias inventore. Odio labore, illo ad sunt dolorum iusto, nesciunt voluptates quasi iste sapiente deleniti obcaecati ullam hic reiciendis ipsa dolor soluta eveniet assumenda. Reprehenderit alias quidem perferendis at animi, eos illo sapiente ut exercitationem quo temporibus est distinctio adipisci. Rem aut tempore quis dolorem vel doloribus! Voluptas debitis ipsam dolor minima, beatae dignissimos at maiores quasi nam ea hic!</div>
+    <div class="card">Card 3</div>
+   </div>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* these are universal selectors which are using in css */
+        *{
+             margin: 0; 
+             padding: 0; 
+        }
+        .box{
+            border: 2px solid blue;
+            display: inline-block;/*isko inline se inline-block element kr denge*/
+            padding: 45px;/*agar element inline hai to padding top se nhi krta hai also margin ke case me bhi vo sab traf se lag jayegi lekin top se nhi lagegi*/
+        }
+    </style>
+</head>
+<body>
+     <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <!-- div ek in line element hai-->
+    <div class="box">I am a box</div>
+    <div class="box">Also a nice box</div>
+    <span>I am a good</span>
+    <span>boy</span>
+</body>
+</html>
+<!-- /* precomposed values */
+display: block;
+display: inline;
+display: inline-block;
+display: flex;
+display: inline-flex;
+display: grid;
+display: inline-grid;
+display: flow-root;
+
+/* box generation */
+display: none;
+display: contents;
+
+/* multi-keyword syntax */
+display: block flex;
+display: block flow;
+display: block flow-root;
+display: block grid;
+display: inline flex;
+display: inline flow;
+display: inline flow-root;
+display: inline grid;
+
+/* other values */
+display: table;
+display: table-row; /* all table elements have an equivalent CSS display value */
+display: list-item;
+
+/* Global values */
+display: inherit;
+display: initial;
+display: revert;
+display: revert-layer;
+display: unset;
+ -->

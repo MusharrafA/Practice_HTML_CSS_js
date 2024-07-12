@@ -1,0 +1,29 @@
+/* this is a global variable */
+:root{
+    --color: rgb(68, 211, 151);
+    --seccolor: rgb(135, 135, 214);
+    --defpad: 23px; /*default padding is also used as root element */
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+     background-color: var(--color);/*rgb(79, 248, 93); */
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 34px;
+    border: 2px solid var(--seccolor);
+}
+/* we can change & sepatate the color by just taking first child and taking globle variable i.e root color --color and secondary color --seccolor: */
+ul li:first-child{
+    --color: rgb(210, 221, 108);
+    background-color:var(--color, blue/*this blue color is not add here because this is alternative color if we do not found the --color variable then the blue color is displayed*/);
+}
+.container{
+    background-color: var(--seccolor) ; /* rgb(30, 185, 30);*/
+}

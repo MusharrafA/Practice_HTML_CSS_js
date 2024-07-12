@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS SELECTORS</title>
+    <style>
+        /* yaha "BOXES" nhi aayega kyuki vo body ka first child hai "BOX" jo hai vo BOXES ka first child hai */
+        /* .box:first-child{ 
+            background-color: red;
+        }*/
+        /* .box::first-line{ 
+            color: rgb(255, 51, 51);
+        }*/
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black; }
+        
+        p, a, .box, [data-color="primary"]{
+            padding-top: 45px;
+        }
+
+        .box:nth-child(even){
+            background-color: blue;
+        }
+
+        .box:nth-last-child(2){
+            background-color: red;
+        }*/
+
+        .boxes::before{
+            content: "musharraf is learning";
+            color: blue;
+        }
+
+        .boxes::after
+        {
+    content: "Musharraf is keep learning";
+    color: brown;
+        }
+
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+        .box::first-letter{
+            color: peru;
+            font-size: 30px;
+        }
+
+        /*  place holder ka color bhi change kr sakta hai iske ander different operations bhi kr sakte hai */
+        input::placeholder{
+            color: rgba(72, 72, 73, 0.747);
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="boxes">
+            <div data-color="primary" class="box">Hey I am a box</div>
+            <div class="box">Hey I am a box</div>
+            <div class="box">Hey I am a box</div>
+            <input type="text" placeholder="Type your name here!"
+        </div>
+    
+</body>
+</html>

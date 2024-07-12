@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media Query</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        /* by this media query this will change color red to blue when the size is decresed form 455px so it change the color these are used for different screens like in laptop the color is remains red but when we se the web page in laptops so the screen color becomes blue  */
+        /* @media not/only media type and (expressions) css-code; */
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: blue;
+            }
+            .boxes{
+                flex-direction:column;
+            }
+        }
+        .boxes{
+            display: flex;
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: burlywood;
+            padding: 3px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>HEy i am a red body guy</div>
+    <div class="boxes">
+        <div class="box">I am Box one</div>
+        <div class="box">I am box two</div>
+        <div class="box">I am box three</div>
+    </div>
+</body>
+</html>
